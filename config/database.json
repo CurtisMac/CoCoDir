@@ -2,8 +2,8 @@
   "development": {
     "username": "postgres",
     "password": "thisisadatabase",
-    "database": "database_development",
-    "host": "127.0.0.1",
+    "database": "cocodir",
+    "host": "localhost",
     "port": 5432,
     "dialect": "postgres"
   },

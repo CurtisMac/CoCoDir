@@ -1,9 +1,9 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var Courses = sequelize.define('Courses', {
+  const Courses = sequelize.define('Courses', {
     title: DataTypes.STRING
   }, {});
-  Courses.associate = function(models) {
+  Courses.associate = (models) => {
     // associations can be defined here
   };
   return Courses;
