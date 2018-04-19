@@ -15,9 +15,9 @@ app.use((req, res, next) => {
 })
 
 //routes
-app.get('/', (req, res)=>{
-  res.send('hi mom, this is my backend!')
-})
-
+app.get('/', (req, res)=> res.status(200).send({
+    message: 'hi mom, this is my backend!'
+  })
+)
 
 module.exports = app
