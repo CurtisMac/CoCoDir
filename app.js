@@ -20,4 +20,7 @@ app.get('/', (req, res)=> res.status(200).send({
   })
 )
 
+const apiRouter = require('./routes/apiRouter')
+app.use('/api', apiRouter)
+
 module.exports = app
