@@ -11,6 +11,18 @@ module.exports = {
       title: {
         type: Sequelize.STRING
       },
+      url: {
+        type: Sequelize.STRING
+      },
+      description: {
+        type: Sequelize.TEXT
+      },
+      pubDate: {
+        type: Sequelize.DATE
+      },
+      courseUpdate: {
+        type: Sequelize.DATE
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

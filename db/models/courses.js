@@ -5,9 +5,11 @@ module.exports = (sequelize, DataTypes) => {
     title: DataTypes.STRING,
     description: DataTypes.TEXT,
     pubDate: DataTypes.DATE,
-    pubUpdate: DataTypes.DATE,
+    courseUpdate: DataTypes.DATE,
 
-  }, {});
+  },{
+    //options can be defined here
+  });
   Courses.associate = (models) => {
     // associations can be defined here
   };
