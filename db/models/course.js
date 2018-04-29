@@ -1,9 +1,19 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Course = sequelize.define('Course', {
-    url: DataTypes.STRING,
-    title: DataTypes.STRING,
+    url: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    instructor: DataTypes.STRING,
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     description: DataTypes.TEXT,
+    avgRating: DataTypes.INTEGER,
+    cost: DataTypes.FLOAT,
+    paymentModel: DataTypes.STRING,
     pubDate: DataTypes.DATE,
     courseUpdate: DataTypes.DATE,
   },{
