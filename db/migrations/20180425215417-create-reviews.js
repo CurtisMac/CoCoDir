@@ -14,6 +14,9 @@ module.exports = {
       text: {
         type: Sequelize.TEXT
       },
+      author: {
+        type: Sequelize.STRING
+      },
       rating: {
         type: Sequelize.INTEGER
       },
@@ -24,6 +27,15 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
+      },
+      courseId: {
+        type: Sequelize.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'Courses',
+          key: 'id',
+          as: 'courseId'
+        }
       }
     });
   },
